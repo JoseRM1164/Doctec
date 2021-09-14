@@ -1,0 +1,25 @@
+<html>
+<body>
+    <h1>
+        Hola Plantilla 1
+    </h1>
+    <p>El nombre del profesor es: {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
+    <p>La hora es: {{hora_actual.day}} / {{hora_actual.month}} / {{hora_actual.year}}</p>
+    <p><strong>Temas del curso: </strong></p>
+    <p>
+        <ul>
+        {% if temas %}
+            {% for tema in temas %}
+                
+                <li>{{tema}}</li>
+
+            {% endfor%}
+            {% else %}
+                <p>No hay elementos en la lista</p>
+        {% endif %}
+
+        </ul>
+
+    </p>
+</body>
+</html>
