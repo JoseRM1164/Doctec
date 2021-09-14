@@ -1,9 +1,21 @@
 <html>
 <body>
+
+    {% include "Genericos/navBar.html" %}
+
     <h1>
         Hola Plantilla 1
     </h1>
-    <p>El nombre del profesor es: {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
+
+    {% if nombre_persona == ' Profe Juan' %}
+    <p>El curso lo imparte el profesor titular</p>
+
+    {% else %}
+    <p>El curso lo imparte el profesor suplente</p>
+
+    {% endif %}
+
+    <p>El nombre del profesor es: {{nombre_persona|upper}} {{apellido_persona.upper}}</p>
     <p>La hora es: {{hora_actual.day}} / {{hora_actual.month}} / {{hora_actual.year}}</p>
     <p><strong>Temas del curso: </strong></p>
     <p>
@@ -11,7 +23,7 @@
         {% if temas %}
             {% for tema in temas %}
                 
-                <li>{{tema}}</li>
+                <li>{{tema|first|lower}}</li>
 
             {% endfor%}
             {% else %}

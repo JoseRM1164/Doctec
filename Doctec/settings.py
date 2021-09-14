@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Doctec.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/Windows 10/Documents/Ultimo Semestre/Lab. Web/Proyecto/Doctec/Doctec/Template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+
+    </head>
+    <body>
+
+        {% include "Genericos/navBar.html" %}
+
+        <h1 style="background-color: darkgreen; color: white; text-align: center;">Doctec</h1>
+        <h2>El futuro de la oficina</h2>
+
+        {% block content %}{% endblock %}
+
+        <p style="background-color: darkgreen; color: white; text-align: center;">Gracias por usar Doctec</p>
+
+    </body>
+</html>
