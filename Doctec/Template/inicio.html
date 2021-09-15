@@ -1,37 +1,12 @@
-<html>
-<body>
+{% extends "machote.html" %}
 
-    {% include "Genericos/navBar.html" %}
+{% block title %}Doctec | Directorio{% endblock %}
 
-    <h1>
-        Hola Plantilla 1
-    </h1>
+{% block content %}
 
-    {% if nombre_persona == ' Profe Juan' %}
-    <p>El curso lo imparte el profesor titular</p>
+<p>Estamos a día: {{hora_actual}}</p>
 
-    {% else %}
-    <p>El curso lo imparte el profesor suplente</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ro18BjrfFg4" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    {% endif %}
-
-    <p>El nombre del profesor es: {{nombre_persona|upper}} {{apellido_persona.upper}}</p>
-    <p>La hora es: {{hora_actual.day}} / {{hora_actual.month}} / {{hora_actual.year}}</p>
-    <p><strong>Temas del curso: </strong></p>
-    <p>
-        <ul>
-        {% if temas %}
-            {% for tema in temas %}
-                
-                <li>{{tema|first|lower}}</li>
-
-            {% endfor%}
-            {% else %}
-                <p>No hay elementos en la lista</p>
-        {% endif %}
-
-        </ul>
-
-    </p>
-</body>
-</html>
+{% endblock %}
