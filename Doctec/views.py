@@ -13,25 +13,29 @@ from django.shortcuts import render
         #self.apellido=apellido
 
 
-def Inicio(request): #primer vista
+def inicio(request): #primer vista
 
     return render(request, "inicio.html")
 
-def Login(request):
+def login(request):
 
     return render(request, "login.html")
 
-def SignUp(request):
+def signUp(request):
 
     return render(request, "signUp.html")
 
-def Directorio(request):
+def directorio(request):
 
     return render(request, "directorioDoc.html")
 
-def InfoDoc(request):
+def infoDoc(request):
 
     return render(request, "infoDoc.html")
+
+def contacto(request):
+
+    return render(request, "contacto.html")
 
 #def adios(request): 
     
