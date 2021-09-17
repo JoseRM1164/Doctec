@@ -4,9 +4,73 @@
 
 {% block content %}
 
-<p>Directorio</p>
+<style>
+    #tidir {
+        background-color: #0DA889;
+        color: white;
+        width: 500px;
+        align-items: center;
+        text-align: center;
+        margin: 20 500px;
+    }
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ro18BjrfFg4" title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    #tabla{
+       overflow-x:auto;
+       margin: 20 431px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    th, td {
+    padding: 15px;
+    text-align: left;
+    }
+
+
+
+</style>
+
+<h2 id="tidir">Busca a tu doctor</h1>
+
+<div id="tabla">
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Especialidad</th>
+            <th>Información</th>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>Sanchez</td>
+            <td>Monroy</td>
+            <td>Pediatra</td>
+            <td>Click</td>
+        </tr>
+        <tr>
+            <td>Alfredo</td>
+            <td>Fuentes</td>
+            <td>Garcia</td>
+            <td>Cardilogo</td>
+            <td>Click</td>
+        </tr>        
+        <tr>
+            <td>Enrique</td>
+            <td>Pineda</td>
+            <td>Roldan</td>
+            <td>Ortopedista</td>
+            <td>Click</td>
+        </tr>        
+        <tr>
+            <td>Jimena</td>
+            <td>Navarro</td>
+            <td>Maldonado</td>
+            <td>Ginecologa</td>
+            <td>Click</td>
+        </tr>
+    </table>
+</div>
+
 
 {% endblock %}

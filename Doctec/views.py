@@ -37,6 +37,10 @@ def contacto(request):
 
     return render(request, "contacto.html")
 
+def servicios(request):
+
+    return render(request, "servicios.html")
+
 #def adios(request): 
     
     #return HttpResponse("Adios Mundo")
